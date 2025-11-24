@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="bg-gray-900 text-center py-6 text-gray-400 text-sm">
+        <footer className="bg-orange-300 text-center py-6 text-yellow-700 text-sm">
             © 2025 Elder Soriano. All rights reserved.
         </footer>
     );

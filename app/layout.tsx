@@ -7,14 +7,10 @@ export const metadata = {
     description: "Portfolio website of Elder Soriano",
 };
 
-export default function RootLayout({
-                                       children,
-                                   }: {
-    children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
-        <body className="bg-[#020616] text-white">
+        <body className="bg-gradient-to-br from-orange-400 via-yellow-300 to-orange-200 text-gray-900">
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
