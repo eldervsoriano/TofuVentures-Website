@@ -7,19 +7,32 @@ export default function AboutPage() {
     const teamMembers = [
         {
             name: "Elder Soriano",
-            position: "Game Designer / Programmer",
-            role: "4th-year College Student / Aspiring QA & Game Tester",
+            position: "Back End / Game Designer / Game Tester",
+            role: "4th-year College Student at the Jose Rizal University | Aspiring QA & Game Tester",
             location: "Makati, Philippines",
             image: "/Images/Icons/profile-pic-about.jpg",
         },
         {
-            name: "Nicole",
-            position: "UI/UX Designer / Artist",
-            role: "Friend & Collaborator",
-            location: "Pangasinan City",
-            image: "/Images/Icons/nicole.jpg",
+            name: "Christian Gabito",
+            position: "Front End / 3D & 2D Artist",
+            role: "4th-year College Student at the Jose Rizal University | Aspiring Game Designer",
+            location: "Pasig, Philippines",
+            image: "/Images/Icons/christian.jpg",
         },
-        // Add more team members here as needed
+        {
+            name: "Elija Elcid Gaspar",
+            position: "3D Artist / Animator / Rigger",
+            role: "4th-year College Student at the Jose Rizal University | Aspiring 3D Artist",
+            location: "Mandaluyong, Philippines",
+            image: "/Images/Gaspar-Profile.jpg",
+        },
+        {
+            name: "Charie Tubil",
+            position: "2D Artist",
+            role: "4th-year College Student at the Jose Rizal University | Aspiring 2D Artist",
+            location: "Pateros, Philippines",
+            image: "/Images/Icons/charie.jpg",
+        },
     ];
 
     return (
@@ -29,11 +42,12 @@ export default function AboutPage() {
                     <motion.div
                         key={index}
                         initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: index * 0.1 }}
-                        className="flex flex-col items-center text-center bg-orange-50 p-6 rounded-xl shadow-lg"
+                        whileHover={{ scale: 1.07 }} // Slightly bigger zoom
+                        transition={{ duration: 0.2 }} // Makes hover zoom faster
+                        animate={{ opacity: 1, y: 0, transition: { duration: 0.6, delay: index * 0.1 } }}
+                        className="flex flex-col items-center text-center bg-orange-50 p-6 rounded-xl shadow-lg hover:shadow-2xl"
                     >
-                        <div className="w-48 h-48 relative rounded-full overflow-hidden border-4 border-yellow-400 shadow-[0_0_20px_#ffd96680] mb-4">
+                        <div className="w-48 h-48 relative rounded-full overflow-hidden border-4 border-yellow-400 shadow-[0_0_20px_#ffd96680] mb-4 hover:shadow-[0_0_30px_#ffd966aa]">
                             <Image
                                 src={member.image}
                                 alt={member.name}

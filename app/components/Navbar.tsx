@@ -8,8 +8,8 @@ export default function Navbar() {
     const pathname = usePathname();
     const navLinks = [
         { name: "Home", href: "/" },
-        { name: "About", href: "/about" },
-        { name: "Works", href: "/works" },
+        { name: "Developers", href: "/about" },
+        { name: "Models", href: "/works" },
         { name: "Contact", href: "/contact" },
     ];
 
@@ -18,12 +18,15 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="flex justify-between items-center px-8 py-4 bg-orange-300/80 backdrop-blur-md border-b border-orange-400 sticky top-0 z-50 shadow-md text-gray-900"
+            className="flex justify-between items-center px-6 py-3 bg-orange-300/80 backdrop-blur-md border-b border-orange-400 sticky top-0 z-50 shadow-md text-gray-900"
         >
-            <h1 className="text-2xl font-bold text-yellow-600 tracking-wide drop-shadow-[0_0_5px_rgba(255,200,0,0.7)] hover:drop-shadow-[0_0_15px_rgba(255,220,0,0.9)] transition-all duration-300">
-                Tofu Ventures
+            {/* Logo as Text */}
+            <h1 className="text-2xl font-bold text-gray-900 drop-shadow-[0_0_5px_rgba(0,0,0,0.4)] hover:drop-shadow-[0_0_10px_rgba(0,0,0,0.6)] transition-all duration-300">
+                TOFU VENTURE
             </h1>
 
+
+            {/* Nav Links */}
             <div className="flex gap-8 relative">
                 {navLinks.map((link) => (
                     <Link
@@ -31,13 +34,13 @@ export default function Navbar() {
                         href={link.href}
                         className={`relative transition-colors duration-300 ${
                             pathname === link.href
-                                ? "text-yellow-600 font-semibold drop-shadow-[0_0_10px_rgba(255,200,0,0.7)]"
-                                : "hover:text-yellow-500 hover:drop-shadow-[0_0_8px_rgba(255,180,0,0.5)]"
+                                ? "text-white font-semibold drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]"
+                                : "hover:text-gray-100 hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]"
                         }`}
                     >
                         {link.name}
                         <span
-                            className={`absolute left-0 -bottom-1 w-0 h-[2px] bg-yellow-500 transition-all duration-300 ${
+                            className={`absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 ${
                                 pathname === link.href ? "w-full" : "group-hover:w-full"
                             }`}
                         />
