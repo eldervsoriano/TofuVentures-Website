@@ -10,8 +10,9 @@ export default function Navbar() {
         { name: "Home", href: "/" },
         { name: "Developers", href: "/about" },
         { name: "Models", href: "/works" },
-        { name: "Contact", href: "/contact" },
+
     ];
+
 
     return (
         <motion.nav
