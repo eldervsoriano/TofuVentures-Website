@@ -18,11 +18,14 @@ export default function HeroSection() {
                     />
                     {/* Download Button */}
                     <a
-                        href="#"
+                        href="https://drive.google.com/file/d/1IuKYGzk9tmiku8qm1x2g9hWDsFqenlkb/view?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="mt-6 px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition"
                     >
                         Download Game
                     </a>
+
                 </div>
 
                 {/* Game Title */}
