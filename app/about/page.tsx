@@ -11,7 +11,7 @@ export default function AboutPage() {
             position: "Back End / Game Designer / Game Tester",
             role: "4th-year College Student at the Jose Rizal University | Aspiring QA & Game Tester",
             location: "Makati, Philippines",
-            image: "/Images/Icons/profile-pic-about.jpg",
+            image: "/Images/Soriano-Profile.jpg",
             github: "https://github.com/eldervsoriano",
             linkedin: "https://www.linkedin.com/in/elder-soriano-86892a351/",
         },
