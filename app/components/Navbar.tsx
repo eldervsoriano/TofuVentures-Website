@@ -22,9 +22,7 @@ export default function Navbar() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="sticky top-0 z-50 bg-orange-300/80 backdrop-blur-md border-b border-orange-400 shadow-md text-gray-900"
         >
-            {/* Wrapper to center content with max width */}
-            <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-3">
-
+            <div className="flex justify-between items-center px-6 py-3 max-w-6xl mx-auto">
                 {/* Logo */}
                 <h1 className="text-2xl font-bold text-gray-900 drop-shadow-[0_0_5px_rgba(0,0,0,0.4)] hover:drop-shadow-[0_0_10px_rgba(0,0,0,0.6)] transition-all duration-300">
                     TOFU VENTURE
@@ -103,3 +101,4 @@ export default function Navbar() {
         </motion.nav>
     );
 }
+    
