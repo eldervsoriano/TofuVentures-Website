@@ -6,12 +6,11 @@ import Image from "next/image";
 
 export default function WorksPage() {
     const images = [
-        { src: "/Images/Aiden.png", name: "Aiden" },
         { src: "/Images/Andrea.png", name: "Andrea" },
         { src: "/Images/Charles.png", name: "Charles" },
         { src: "/Images/Larong_Bayan_Flier_Transparent.png", name: "Larong Bayan Flier" },
-        { src: "/Images/Larong_Bayan_Sorbetes_2_Transparent.png", name: "Larong Bayan Sorbetes" },
-        { src: "/Images/Larong_Bayan_Tindahan_Transparent.png", name: "Larong Bayan Tindahan" },
+        { src: "/Images/Larong_Bayan_Sorbetes_2_Transparent.png", name: "Sorbetes 2" },
+        { src: "/Images/Larong_Bayan_Tindahan_Transparent.png", name: "Tindahan" },
         { src: "/Images/Michael.png", name: "Michael" },
         { src: "/Images/Nina.png", name: "Nina" },
     ];
@@ -36,9 +35,9 @@ export default function WorksPage() {
                 {images.map((img, idx) => (
                     <motion.div
                         key={idx}
-                        whileHover={{ scale: 1.05 }} // slightly bigger zoom
+                        whileHover={{ scale: 1.06 }}
                         transition={{ duration: 0.2 }}
-                        className="relative w-full h-80 bg-orange-50/70 rounded-2xl shadow-lg border border-yellow-400 p-2 overflow-hidden"
+                        className="relative w-full h-96 bg-transparent rounded-2xl shadow-lg border border-yellow-400 p-2 overflow-hidden"
                     >
                         <Image
                             src={img.src}
