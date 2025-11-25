@@ -6,6 +6,7 @@ import Image from "next/image";
 
 export default function WorksPage() {
     const images = [
+        { src: "/Images/Aiden.png", name: "Aiden" },
         { src: "/Images/Andrea.png", name: "Andrea" },
         { src: "/Images/Charles.png", name: "Charles" },
         { src: "/Images/Larong_Bayan_Flier_Transparent.png", name: "Larong Bayan Flier" },
